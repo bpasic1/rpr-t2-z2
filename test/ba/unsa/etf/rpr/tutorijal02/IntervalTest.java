@@ -1,10 +1,12 @@
 package ba.unsa.etf.rpr.tutorijal02;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class IntervalTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void ctorExceptionTest() {
         assertThrows(IllegalArgumentException.class, () -> {
             Interval i = new Interval(2.5, 2.4, true, true);
